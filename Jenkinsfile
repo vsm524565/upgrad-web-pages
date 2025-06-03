@@ -17,7 +17,10 @@ pipeline {
         checkout([
           $class: 'GitSCM',
           branches: [[name: '*/main']],
-          userRemoteConfigs: [[url: 'git@github.com:vsm524565/upgrad-web-pages.git']]
+	  userRemoteConfigs: [[
+        url: 'git@github.com:vsm524565/upgrad-web-pages.git',
+        credentialsId: 'github-ssh-key'
+      ]]
         ])
       }
     }
