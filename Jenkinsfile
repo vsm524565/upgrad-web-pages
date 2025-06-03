@@ -2,8 +2,8 @@ pipeline {
   agent any
 
   environment {
-    AWS_SERVER    = 44.203.79.156       // e.g., 3.84.91.194
-    AZURE_SERVER  = 104.41.150.173      // e.g., 52.174.23.10
+    AWS_SERVER    = "44.203.79.156"       // e.g., 3.84.91.194
+    AZURE_SERVER  = "104.41.150.173"      // e.g., 52.174.23.10
     AWS_USER      = 'ubuntu'
     AZURE_USER    = 'azureuser'
     AWS_SSH_CRED  = 'aws-ssh-key'               // Jenkins credential ID for AWS
